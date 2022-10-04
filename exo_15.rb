@@ -3,7 +3,7 @@ puts 'Salut, bienvenue dans ma super pyramide ! Combien d étages veux-tu ?'
 number = 0
 loop do # Mise en place de la limite et la condition de 25
   number = gets.chomp.to_i
-  break if number <= 25
+  break if number <= 25 && number > 0 # Permet d'empecher les nombres négatif
 end
 
 i = 0
